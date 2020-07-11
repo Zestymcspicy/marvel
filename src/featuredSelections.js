@@ -16,7 +16,7 @@ export default function FeaturedSelections(){
     [setFeatComics])
 
   return(
-    <div>
+    <div id="featuredSelections">
       {}
     </div>
   )

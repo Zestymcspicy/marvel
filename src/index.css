@@ -10,21 +10,37 @@ body {
   color: white;
 }
 
-#mainBanner{
-  width: 100vw;
-  height: 40px;
-  position: fixed;
-  padding: 5px;
+#mainBanner {
+  width: 100%;
+  height: 40px;  
   display: flex;
   flex-direction: row;
   background-color: black;
-  left: 0;
+  right: 0;
+  z-index: 400;
+}
+
+.fixed-top {
+  position: fixed;
+  /* left: 0; */
   top: 0;
+  -webkit-backface-visibility: hidden;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  -webkit-backface-visibility: hidden;
 }
 
 #homeBox{
   padding: 40px 20px 20px 20px;
   /* overflow-x: visible; */
+}
+
+#featuredSelections {
+  height: 600px;
+  width: 100%
 }
 
 .banner-center-container{
@@ -71,6 +87,10 @@ body {
   flex-direction: row;
 }
 
+.center-icon {
+  width: 40px;
+}
+
 .upper-left-icon, .center-icon, .upper-right-icon{
   max-height: 100%;
 }
@@ -82,6 +102,28 @@ code {
 
 #footer{
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  background-color: #121212;
+  right: 0;
+  z-index: 400;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-button{
+  display: flex;
+  flex-direction: row;
+  background-color: #121212;
+  border: none;
+  color: #676767;
+}
+
+.footer-button span{
+  margin: auto;
+}
+
+.footer-icon {
+  maxwidth: auto;
+  height: 100%;
 }

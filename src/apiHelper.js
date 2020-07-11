@@ -17,4 +17,5 @@ export default function Helper(query){
   console.log(response.data.results)
   return(response.data.results)
 })
+.catch(err => "there was an error fetching your comics")
 };

@@ -10,7 +10,9 @@ export default function MainBanner(){
 
 
   return(
-    <div id="mainBanner">
+    <div
+      id="mainBanner"
+      className="fixed-top">
       <img
       className="upper-left-icon"
       onClick={pickRandom}

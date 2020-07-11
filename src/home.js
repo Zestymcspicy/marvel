@@ -6,12 +6,8 @@ export default function Home() {
 
   return(
     <div id="homeBox">
-      <div>
-        <FeaturedSelections/>
-      </div>
-      <div>
-        <NewThisWeek/>
-      </div>
+      <FeaturedSelections/>
+      <NewThisWeek/>
       <div></div>
       <div></div>
       <div></div>

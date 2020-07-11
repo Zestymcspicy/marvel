@@ -5,12 +5,18 @@ import Helper from './apiHelper';
 export default function NewThisWeek(){
 
 const [newComics, setNewComics] = useState([])
+const [errorMessage, setErrorMessage] = useState("")
 
   useEffect(()=>{
     async function getNew(){
-      const query = "comics?startYear=2020&limit=100"
+      const query = "comics?startYear=2019&limit=25"
       let info = await Helper(query)
-      setNewComics(info)
+      if(Array.isArray(info)){
+        setNewComics(info)
+      } else {
+        setErrorMessage(info)
+      }
+
   //   fetchData()
   // function fetchData(){
   //   const apiKey = 'ddb64a637cccf095183c9ca095824714';
@@ -30,10 +36,11 @@ const [newComics, setNewComics] = useState([])
   }
   getNew();
   },
-  [setNewComics])
+  [setNewComics, setErrorMessage])
 
   return(
     <div>
+      <h1>{errorMessage}</h1>
       <ul className="issue-row">
         {newComics.map((x,index)=>(<li key={index}><Issue comic={x}/></li>))}
       </ul>
