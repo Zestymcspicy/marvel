@@ -1,28 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+// import ReactDom from 'react-dom';
+// import './styles.css';
+import Box from './box';
+// import useDebounce from './use-debounce';
+import CharacterCrosses from './characterCrosses'
+import MainBanner from './mainBanner'
+import Home from './home'
+import Footer from './footer'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+
+export default function App(){
+
+  return(
+    <div>
+      <MainBanner/>
+      <div>
+      <Home/>
       </div>
-    );
-  }
+      <Footer/>
+    </div>
+  )
 }
-
-export default App;
