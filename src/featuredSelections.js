@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import IssueRow from './issueRow'
 import Helper from './apiHelper';
 
 export default function FeaturedSelections(){
@@ -17,7 +18,8 @@ export default function FeaturedSelections(){
 
   return(
     <div id="featuredSelections">
-      {}
+      <h3>FEATURED</h3>
+      <IssueRow comics={featComics} />
     </div>
   )
 }

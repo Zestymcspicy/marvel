@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import Issue from './issue'
+import IssueRow from './issueRow'
 import Helper from './apiHelper';
 
 export default function NewThisWeek(){
@@ -40,10 +40,11 @@ const [errorMessage, setErrorMessage] = useState("")
 
   return(
     <div>
+    <div className="mid-banner">
+      <h3>NEW THIS WEEK</h3>
+    </div>
       <h1>{errorMessage}</h1>
-      <ul className="issue-row">
-        {newComics.map((x,index)=>(<li key={index}><Issue comic={x}/></li>))}
-      </ul>
+      <IssueRow comics={newComics}/>
     </div>
   )
 }

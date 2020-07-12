@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 // import Box from './box';
 // import CharacterCrosses from './characterCrosses'
 import MainBanner from './mainBanner'
