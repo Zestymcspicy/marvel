@@ -20,8 +20,9 @@ export default function Footer(){
         <span>Reading Lists</span>
       </button>
       <button className="footer-button">
+        <div className="overlay"></div>
         <img className="footer-icon" src={browseIcon}/>
-        <span>Browse</span>
+        <span>Browse</span>        
       </button>
       <button className="footer-button">
         <img className="footer-icon" src={myLibraryIcon}/>
