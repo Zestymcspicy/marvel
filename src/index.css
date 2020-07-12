@@ -112,22 +112,26 @@ code {
 }
 
 .footer-button{
+  width: 100%;
   display: flex;
+  /* justify-content: space-around; */
   flex-direction: row;
   background-color: #121212;
   border: none;
   color: #676767;
+  margin: auto;
 }
 
 .footer-button span{
   margin: auto 1%;
   font-size: 14px;
-  width: fit-content;
+  max-width: 100%;
   text-align: left;
+  height: 15px;
 }
 
 .footer-icon {
-  margin: auto;
+  margin: auto 10px auto auto;
   max-width: 42px;
   /* width: 75%; */
   height: auto;
@@ -136,4 +140,22 @@ code {
 .overlay {
   background-color: red;
   z-index: 500;
+}
+
+
+@media (max-width: 560px){
+  .footer-button{
+    flex-direction: column;
+  }
+
+  .footer-button span{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .footer-icon {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
