@@ -12,10 +12,14 @@ export default function Helper(query){
       method: 'GET',
       // mode: 'no-cors'
     }
-  ).then(r => r.json()
+  ).then(r => {
+    console.log(r)
+    return r.json()
+  }
   ).then(response=> {
+  console.log(response.data)
   console.log(response.data.results)
   return(response.data.results)
 })
-.catch(err => "there was an error fetching your comics")
+.catch(err => err)
 };
