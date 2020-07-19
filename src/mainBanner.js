@@ -8,6 +8,7 @@ export default function MainBanner(){
     console.log("Hello")
   }
 
+  
 
   return(
     <div
@@ -22,6 +23,10 @@ export default function MainBanner(){
         className="center-icon"
         src={icon}/>
       </div>
+      <img
+      className="upper-left-icon"
+      onClick={pickRandom}
+      src={dice}/>
     </div>
   )
 }
