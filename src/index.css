@@ -146,6 +146,33 @@ body {
   max-height: 100%;
 }
 
+
+.Chevron {
+  /* transform: rotate(90deg); */
+  margin: 5px 0 0 0;
+  position:relative;
+  display:block;
+  height:50px; /*height should be double border*/
+  width: 24px;
+}
+.Chevron::before,
+.Chevron::after {
+    position:absolute;
+    display:block;
+    content:"";
+    border: 10px solid transparent; /*adjust size*/
+}
+/*Change the four instances of 'top' below to rotate (top/right/bottom/left)*/
+.Chevron::before {
+  /* margin: 5px 0 0 0; */
+  right:1px;
+  border-right-color:#ffffff; /*Chevron Color*/
+}
+.Chevron::after {
+    right:-2px; /*adjust thickness*/
+    border-right-color:#000000; /*Match background colour*/
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

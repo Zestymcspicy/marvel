@@ -20,17 +20,20 @@ export default function MainBanner(){
       id="backButton"
       className="upper-left-icon"
       onClick={goBack}
-
-      ><span>{Back}</span></div>
+      ><span className="Chevron">
+    
+      </span></div>
       <div className="banner-center-container">
         <img
         className="center-icon"
-        src={icon}/>
+        src={icon}
+        alt="Marvel Unlimited Icon"/>
       </div>
       <img
       className="upper-left-icon"
       onClick={pickRandom}
-      src={dice}/>
+      src={dice}
+      alt="Random Issue Button"/>
     </div>
   )
 }
