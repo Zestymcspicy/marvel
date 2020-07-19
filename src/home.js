@@ -6,7 +6,7 @@ export default function Home() {
 
 
   return(
-    <div id="homeBox">
+    <div className="home-box">
       <FeaturedSelections/>
       <NewThisWeek/>
       <PopularThisWeek/>
