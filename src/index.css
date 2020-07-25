@@ -87,7 +87,7 @@ body {
 .issue{
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 8px;
   min-width: 110px;
   min-height: 150px;
 }
