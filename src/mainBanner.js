@@ -1,7 +1,7 @@
 import React from 'react';
-import backButton from './images/arrowbackbutton_79955.png'
 import HomeBanner from './homeBanner.js'
-
+import BrowseBanner from './browseBanner.js'
+import {Route} from 'react-router-dom'
 export default function MainBanner(){
 
 
@@ -20,7 +20,11 @@ export default function MainBanner(){
       ><span className="Chevron">
 
       </span></div>
-    <HomeBanner/>
+      <Route exact path="/" render={() => <HomeBanner/>}/>
+      <Route path="/account" render={() => <HomeBanner/>}/>
+      <Route path="/readingLists" render={() => <HomeBanner/>}/>
+      <Route path="/browse" render={() => <BrowseBanner/>}/>
+      <Route path="/library" render={() => <HomeBanner/>}/>
     </div>
   )
 }

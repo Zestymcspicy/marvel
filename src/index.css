@@ -24,7 +24,6 @@ body {
 
 .fixed-top {
   position: fixed;
-  /* left: 0; */
   top: 0;
   -webkit-backface-visibility: hidden;
 }
@@ -36,12 +35,13 @@ body {
 
 .upper-left-icon, .center-icon, .upper-right-icon{
   max-height: 100%;
+  min-width: 40px;
 }
 
 .upper-right-icon {
   width: 40px;
   display: block;
-  margin: 0;
+  margin: 5px 5px 0 0;
   padding: 0;
   border: none;
 }
@@ -61,7 +61,6 @@ body {
 }
 
 .Chevron {
-  /* transform: rotate(90deg); */
   margin: 5px 0 0 0;
   position:relative;
   display:block;
@@ -78,7 +77,6 @@ body {
 }
 /*Change the four instances of 'top' below to rotate (top/right/bottom/left)*/
 .Chevron::before {
-  /* margin: 5px 0 0 0; */
   right:1px;
   border-right-color:#ffffff; /*Chevron Color*/
 }
@@ -96,11 +94,9 @@ body {
 
 .home-box{
   padding: 40px 20px 80px 20px;
-  /* overflow-x: visible; */
 }
 
 #featuredSelections {
-  /* height: 600px; */
   width: 100%
 }
 
@@ -111,7 +107,6 @@ body {
 
 .row-outer{
   overflow-x: hidden;
-
   width: 100%;
 }
 

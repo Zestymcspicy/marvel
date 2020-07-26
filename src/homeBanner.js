@@ -9,12 +9,14 @@ export default function HomeBanner() {
   }
 
   return(
+    <>
     <div className="banner-center">
     <div className="banner-center-container">
       <img
       className="center-icon"
       src={icon}
       alt="Marvel Unlimited Icon"/>
+    </div>
     </div>
     <button
     className="upper-right-icon"
@@ -23,6 +25,6 @@ export default function HomeBanner() {
     src={dice}
     alt="Random Issue Button"/>
     </button>
-    </div>
+    </>
   )
 }
