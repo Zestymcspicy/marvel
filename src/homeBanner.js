@@ -7,9 +7,9 @@ export default function HomeBanner() {
   const pickRandom = () => {
     console.log("Hello")
   }
-  
+
   return(
-    <div>
+    <div className="banner-center">
     <div className="banner-center-container">
       <img
       className="center-icon"
@@ -17,7 +17,7 @@ export default function HomeBanner() {
       alt="Marvel Unlimited Icon"/>
     </div>
     <img
-    className="upper-left-icon"
+    className="upper-right-icon"
     onClick={pickRandom}
     src={dice}
     alt="Random Issue Button"/>

@@ -16,6 +16,8 @@ body {
   display: flex;
   flex-direction: row;
   background-color: black;
+  flex-wrap: nowrap;
+  /* justify-content: space-between; */
   /* right: 0; */
   z-index: 400;
 }
@@ -26,6 +28,59 @@ body {
   top: 0;
   -webkit-backface-visibility: hidden;
 }
+
+.center-icon {
+  width: 40px;
+  margin: 0 auto 0 auto;
+}
+
+.upper-left-icon, .center-icon, .upper-right-icon{
+  max-height: 100%;
+}
+
+.upper-right-icon {
+  width: 40px;
+  display: block;
+  margin: 0;
+}
+
+.banner-center-container{
+  display:flex;
+  justify-content: center;
+  width: calc(100% - 80px);
+}
+
+.banner-center{
+  width: 100%;
+}
+
+.Chevron {
+  /* transform: rotate(90deg); */
+  margin: 5px 0 0 0;
+  position:relative;
+  display:block;
+  height:50px; /*height should be double border*/
+  width: 24px;
+}
+
+.Chevron::before,
+.Chevron::after {
+    position:absolute;
+    display:block;
+    content:"";
+    border: 10px solid transparent; /*adjust size*/
+}
+/*Change the four instances of 'top' below to rotate (top/right/bottom/left)*/
+.Chevron::before {
+  /* margin: 5px 0 0 0; */
+  right:1px;
+  border-right-color:#ffffff; /*Chevron Color*/
+}
+.Chevron::after {
+    right:-2px; /*adjust thickness*/
+    border-right-color:#000000; /*Match background colour*/
+}
+
 
 .fixed-bottom {
   position: fixed;
@@ -41,12 +96,6 @@ body {
 #featuredSelections {
   /* height: 600px; */
   width: 100%
-}
-
-.banner-center-container{
-  display:flex;
-  justify-content: center;
-  width: calc(100% - 80px);
 }
 
 .mid-banner {
@@ -97,28 +146,13 @@ body {
 }
 
 .comic-title {
-  /* text-overflow: ellipsis; */
+  text-overflow: ellipsis;
   font-size: 14px;
   /* line-height: 15px; */
   max-height: 36px;
   overflow: hidden;
 }
 
-/* .comic-title::before {
-  position: absolute;
-  content: "...";
-  bottom: 0;
-  right: 0;
-  color: white;
-}
-
-.comic-title::after {
-  content: "";
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  background: black;
-}*/
 
 .mid-banner h3{
   margin: 0 0 0 0;
@@ -138,40 +172,6 @@ body {
   flex-direction: row;
 }
 
-.center-icon {
-  width: 40px;
-}
-
-.upper-left-icon, .center-icon, .upper-right-icon{
-  max-height: 100%;
-}
-
-
-.Chevron {
-  /* transform: rotate(90deg); */
-  margin: 5px 0 0 0;
-  position:relative;
-  display:block;
-  height:50px; /*height should be double border*/
-  width: 24px;
-}
-.Chevron::before,
-.Chevron::after {
-    position:absolute;
-    display:block;
-    content:"";
-    border: 10px solid transparent; /*adjust size*/
-}
-/*Change the four instances of 'top' below to rotate (top/right/bottom/left)*/
-.Chevron::before {
-  /* margin: 5px 0 0 0; */
-  right:1px;
-  border-right-color:#ffffff; /*Chevron Color*/
-}
-.Chevron::after {
-    right:-2px; /*adjust thickness*/
-    border-right-color:#000000; /*Match background colour*/
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
