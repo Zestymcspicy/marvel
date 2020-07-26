@@ -54,9 +54,11 @@ body {
   display:flex;
   justify-content: center;
   width: calc(100% - 80px);
+  max-height: 100%;
 }
 
 .banner-center{
+  max-height: 100%;
   width: 100%;
 }
 
