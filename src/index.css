@@ -42,6 +42,12 @@ body {
   width: 40px;
   display: block;
   margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.upper-right-icon img {
+  max-width: 100%;
 }
 
 .banner-center-container{

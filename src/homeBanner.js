@@ -16,11 +16,13 @@ export default function HomeBanner() {
       src={icon}
       alt="Marvel Unlimited Icon"/>
     </div>
-    <img
+    <button
     className="upper-right-icon"
-    onClick={pickRandom}
+    onClick={pickRandom}>
+    <img
     src={dice}
     alt="Random Issue Button"/>
+    </button>
     </div>
   )
 }
