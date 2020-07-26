@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import ReactDom from 'react-dom';
-// import './styles.css';
 import Box from './box';
-// import useDebounce from './use-debounce';
 
 export default function CharacterCrosses(){
 
