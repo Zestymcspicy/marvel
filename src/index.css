@@ -87,6 +87,23 @@ body {
     border-right-color:#000000; /*Match background colour*/
 }
 
+.rhombus-button {
+  background-color: #121212;
+  color: white;
+  padding: 10px 15px 15px 15px;
+  border: #0b0 solid 1px;
+  transform: skewX(-20deg);
+  width: 19%;
+}
+
+#pubDateSpan{
+  font-size: 12px;
+}
+
+.rhombus-button span {
+  display: block;
+  transform: skewX(20deg);
+}
 
 .fixed-bottom {
   position: fixed;

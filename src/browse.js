@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {Link, Route} from 'react-router-dom'
+
+
 
 export default function Browse(){
 
   return(
     <div className="home-box">
-    <h1>Browse</h1>
+
     </div>
   )
 }
